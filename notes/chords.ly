@@ -191,12 +191,98 @@ IIChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+IIIChords = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 3/4 \tempoIIIa
+    << {
+      <a' c>2.
+      q4 <g h>2
+      q4 <f a>2
+      a16 c h a gis h a4 gis8\turn
+      a4
+    } \\ {
+      e2.
+      d
+      c
+      f4 e2
+      e4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIIb
+    << {
+      r4 r8 d'4 h8 r e~ %6
+      e c a4. h8 a gis
+      a4
+    } \\ {
+      r8 a4 f8 d e4 c8
+      c' e, c d16 e f4 e
+      e
+    } \\ {
+      \voiceFour s2. gis8 a16 h
+    } >> r4 r2\fermata \bar "||"
+
+    \time 3/4 \tempoIIIc
+    R2. %9
+    << {
+      R
+      a4 gis8 h e, h'
+      c2 cis4
+      d8 h a4 gis\trill
+      a
+    } \\ {
+      e4 c8 e a, e'
+      f8. e16 d2
+      c8. d16 e2
+      d8 f e2
+      e4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIId
+    << {
+      r8 e' c a e'4. d8 %15
+      c h c4 h8 c16 d e4~
+      <c e>8 <h d> <a c>([ <gis h>)] a4
+    } \\ {
+      r2 r8 a gis e
+      a gis a4 gis8 a h4
+      c,8 f e4 e
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIIIe
+    << {
+      R2. %18
+      r8 e'( gis,) gis a a
+      h4. c8 \appoggiatura e16 d8 c16 h
+      c d c d e4 d8 c
+      h16 c h c d4. c8
+      h8. a16 gis8 a4 gis8\turn
+      a4
+    } \\ {
+      r8 a( c,) c d d
+      e2 fis4
+      gis8 fis gis e fis gis
+      a4~ a8. h32 c h8 a
+      gis16 a gis a h4. a8
+      gis8. fis16 e2
+      e4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIIf
+    << {
+      s2 a8 e'4 d8~
+      d c4 h8 f' e4 a,8~
+      \tuplet 6/4 4 { a16 h a gis a fis } gis4\trill
+    } \\ {
+      r8 a4 gis8 a4 h
+      a2 <gis h>4 a8 e
+      e2
+    } \\ {
+      s1
+      \voiceFour s4 f
+    } >> <c e a>4 r\fermata \bar "|."
+  }
+}
 
 % Chords = {
 %   \relative c' {

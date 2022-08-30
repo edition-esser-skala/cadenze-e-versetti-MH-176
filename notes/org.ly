@@ -169,12 +169,74 @@ IIOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+IIIOrgano = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \tempoIIIa
+    a8 a' c h a g
+    f f g h g f
+    e e f a f e
+    << { h'4. c8 h4\trill \noBreak a } \\ { d,4 e2 a,4 } >>
+    r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIIb
+    R1 \noBreak %6
+    << { a'2~ a8 d c h \noBreak a4 } \\ { r8 a4 f8 d4 e a, } >>
+    r r2\fermata \bar "||"
+
+    \time 3/4 \tempoIIIc
+    << {
+      a'4 gis8 h e, h' \noBreak %9
+      c8. h16 a8. g16 f8 e
+      d d'16 c h8. a16 gis4
+      a2.
+      a8 d c4 h \noBreak
+      a
+    } \\ {
+      R2.
+      R
+      R
+      r8 e c e a, g'
+      f d e2
+      a,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIId
+    R1 \noBreak %15
+    << { r8 e'' c a e'4. d8 } \\ { s2 r8 a gis e } >> \noBreak
+    a d, e4 a, r\fermata \bar "||"
+
+    \time 3/4 \tempoIIIe
+    R2. \noBreak %18
+    R
+    R
+    r8 a'( c,) c d d
+    << {
+      r e'( gis,) gis a a
+      h16 c h c d8 c h4 \noBreak
+      a
+    } \\ {
+      e2.~
+      e
+      a,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIIf
+    << {
+      e''2 e \noBreak %25
+      e4 d d c
+      h2 a4
+    } \\ {
+      <a c>4 <h d> c gis
+      a d, e2~
+      e a,4
+    } \\ {
+      s1
+      s
+      h'4. d8 s4
+    } >> r\fermata \bar "|." %27 finis
+  }
+}
 
 % Organo = {
 %   \relative c {

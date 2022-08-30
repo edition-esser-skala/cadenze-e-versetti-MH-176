@@ -23,16 +23,30 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \section "2" "di Toni"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new PianoStaff <<
+  %         \set PianoStaff.instrumentName = "org"
+  %         \new Staff { \IIChords }
+  %         \new Staff { \IIOrgano }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
-    \section "2" "di Toni"
+    \section "3" "tii Toni"
     \addTocEntry
-    % \paper { systems-per-page = #4 }
     \score {
       <<
         \new PianoStaff <<
           \set PianoStaff.instrumentName = "org"
-          \new Staff { \IIChords }
-          \new Staff { \IIOrgano }
+          \new Staff { \IIIChords }
+          \new Staff { \IIIOrgano }
         >>
       >>
       \layout { }
