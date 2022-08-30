@@ -284,12 +284,120 @@ IIIChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+IVChords = {
+  \relative c' {
+    \clef treble
+    \key e \phrygian \time 4/4 \tempoIVa
+    e8 e' e, fis\trill gis e' gis, a\trill
+    << {
+      h16 c d c d f e d <h d>4( <a c>8) <gis h>
+      q4( a8) <f a> a16 c h a gis a fis a
+      gis2
+    } \\ {
+      <f gis>4 h e,4. d8
+      e4. d8 e4. dis8
+      e2
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIVb
+    \partial 4 << {
+      r4 r r a %5
+      e' d c
+      h2.
+      c2 d4
+      h2 dis4
+      e2
+    } \\ {
+      e,4
+      a g f
+      e2 a4~
+      a gis8. fis16 gis4
+      a8 e a2
+      gis <fis a>4
+      <e gis>2
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoIVc
+    << {
+      r8 h' gis a h4 c %12
+      h8 e4 dis8 d4. c8
+      gis4 a~ a gis8 c
+      h2
+    } \\ {
+      r2 r8 e, c d
+      e4 fis gis8. a16 h8 a
+      e4. f8 e4. dis8
+      e2
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIVd
+    R2. %16
+    R
+    R
+    R
+    << {
+      R
+      R
+      r4 h' h
+    } \\ {
+      r4 e, e
+      c' a dis,
+      e2 s4
+    } >>
+    f' d gis,
+    <a e c>2 <e gis h>4
+    << {
+      c'2( h4)
+      h2
+    } \\ {
+      e,2 fis4
+      e2
+    } \\ {
+      a2.
+      gis2
+    } >> r4\fermata \bar "||"
+
+    \time 2/2 \tempoIVe
+    << {
+      r4 h c2 %27
+      h4 e a,8 h c d
+      e4 c d2
+      c4 h~ h a~
+      a gis <e a>2~
+      <e gis>4 <gis h>
+    } \\ {
+      R1
+      r4 e f2
+      e4 a d,8 e f g
+      a4 g8 f e2
+      r4 h c2
+      h4 e
+    } \\ {
+      s1
+      s
+      s
+      s
+      d2
+    } >> \once \stemUp <a' c>2
+    <e gis h>1\fermata \bar "||"
+
+    \time 3/4 \tempoIVf
+    e'8 h gis h gis e %34
+    f' d h d h gis
+    <e a c e>2.
+    << {
+      e'2 d4
+      c8 gis \appoggiatura h16 a8 gis a dis,
+      \appoggiatura dis4 e2
+    } \\ {
+      e2.
+      e2 c4
+      h2
+    } \\ {
+      <gis' h>2 gis8 h
+    } >> r4\fermata \bar "|." %39 finis
+  }
+}
 
 % Chords = {
 %   \relative c' {

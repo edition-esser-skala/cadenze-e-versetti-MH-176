@@ -238,12 +238,114 @@ IIIOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+IVOrgano = {
+  \relative c {
+    \clef bass
+    \key e \phrygian \time 4/4 \tempoIVa
+    << {
+      <gis' h>4. <a c>8 <h d>4. <c e>8
+      d4 gis,
+    } \\ {
+      e1~
+      e2
+    } >> a,8 a' a, h\trill
+    c c' c, d\trill << {
+      c'4 h16 c a c
+      h2
+    } \\ {
+      e,2~ \noBreak
+      e
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIVb
+    \partial 4 r4 \noBreak R2. \noBreak %6
+    R
+    r4 r e
+    << {
+      r r a
+      e' d c
+      h2
+    } \\ {
+      a4 g f
+      e2.~ \noBreak
+      e2
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoIVc
+    R1 \noBreak %12
+    r2 r8 h' gis a
+    << {
+      h4 c~ c h8 a
+      gis2
+    } \\ {
+      r8 e c d e2~ \noBreak
+      e
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIVd
+    r4 e e \noBreak %16
+    c' a dis,
+    << {
+      r h' h
+      f' d gis,
+      a2 g4
+      fis2 c'4
+      h r h8 c
+      d4. e8 f4
+    } \\ {
+      e,2.
+      d!
+      c2 h4
+      a2 a'4
+      gis r gis8 a
+      h4. c8 d4
+    } \\ {
+      \voiceFour s2.
+      s
+      s
+      s
+      s2 r4
+      R2.
+    } >>
+    r4 e, e
+    c' a dis, \noBreak
+    e2 r4\fermata \bar "||"
+
+    \time 2/2 \tempoIVe
+    R1 \noBreak %27
+    R
+    R
+    r4 h c2
+    h4 e a,8 h c d
+    << {
+      s2 a'8 h c d
+      s1
+    } \\ {
+      e,1~ \noBreak
+      e\fermata
+    } >> \bar "||"
+
+    \time 3/4 \tempoIVf
+    << {
+      <gis h>2. %34
+      <f gis h>
+    } \\ {
+      e2. \noBreak
+      d
+    } >>
+    c8 a a' e c a
+    d h d gis h gis
+    << {
+      a h c h a4
+      gis2
+    } \\ {
+      a2 \bp #0 #-1 a8 fis
+      e2
+    } \\ {
+      \voiceFour \shiftOff s2 a,4
+    } >> r4\fermata \bar "|." %39 finis
+  }
+}
 
 % Organo = {
 %   \relative c {
@@ -272,3 +374,9 @@ IIIOrgano = {
 %
 %   }
 % }
+
+% << {
+%
+% } \\ {
+%
+% } >>

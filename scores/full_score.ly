@@ -38,15 +38,30 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \section "3" "tii Toni"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new PianoStaff <<
+  %         \set PianoStaff.instrumentName = "org"
+  %         \new Staff { \IIIChords }
+  %         \new Staff { \IIIOrgano }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
-    \section "3" "tii Toni"
+    \section "4" "ti Toni"
     \addTocEntry
     \score {
       <<
         \new PianoStaff <<
           \set PianoStaff.instrumentName = "org"
-          \new Staff { \IIIChords }
-          \new Staff { \IIIOrgano }
+          \new Staff { \IVChords }
+          \new Staff { \IVOrgano }
         >>
       >>
       \layout { }
