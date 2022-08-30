@@ -96,6 +96,113 @@ IOrgano = {
   }
 }
 
+IIOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoIIa
+    << {
+      s4 g' g16. gis32 a8~ a16 b c8~
+      c b a4 g
+    } \\ {
+      g8.[ f16 es8. d16] c2 \noBreak
+      d g,4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIIb
+    R2. \noBreak %3
+    R
+    d''4 d, s
+    g g, << {
+      g'
+      b a2
+      g4
+    } \\ {
+      es4 d2. \noBreak
+      g,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIc
+    R1 \noBreak %9
+    << {
+      b'8 fis g g' d g, a4\turn
+      g4
+    } \\ {
+      g8 d es4 d2 \noBreak
+      g,4
+    } >> r r2\fermata \bar "||"
+
+    \time 3/4 \tempoIId
+    R2. \noBreak %12
+    r8 g' b a g a
+    << {
+      c4 b a
+      g2 a4~
+      a8 b16 c d2 \noBreak
+      d4
+    } \\ {
+      fis,4 g4. fis8
+      g f es2
+      d2.
+      g4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIe
+    g8 b16 a g4. a16 g fis4 \noBreak %18
+    << { b es a, g } \\ { g c, d4. es16 d } >> \noBreak
+    c8 b16 c d4 g, r\fermata \bar "||"
+
+    \time 3/4 \tempoIIf
+    << {
+      <b' d>2. %21
+      <g c>
+      <es a>
+      <g b>2 <a c>4
+      g2
+    } \\ {
+      g2.
+      es
+      c
+      d
+      g,2
+    } >> r4\fermata \bar "|." %25 finis
+  }
+}
+
+% Organo = {
+%   \relative c {
+%     \clef bass
+%
+%   }
+% }
+
+% Organo = {
+%   \relative c {
+%     \clef bass
+%
+%   }
+% }
+
+% Organo = {
+%   \relative c {
+%     \clef bass
+%
+%   }
+% }
+
+% Organo = {
+%   \relative c {
+%     \clef bass
+%
+%   }
+% }
+
+% Organo = {
+%   \relative c {
+%     \clef bass
+%
+%   }
+% }
+
 % Organo = {
 %   \relative c {
 %     \clef bass

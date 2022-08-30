@@ -113,6 +113,113 @@ IChords = {
   }
 }
 
+IIChords = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \tempoIIa
+    <b d g> <g' b> <c es>8. <b d>16 <a c>8. <g b>16
+    << { a8 g4 fis8\turn g4 } \\ { fis8 g d4 d } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIIb
+    d'4 d, c' %3
+    << {
+      b2.
+      <fis a>
+      g~
+      g2 fis4\turn
+      g
+    } \\ {
+      g4 g, g'
+      s2 c,4
+      <b d>2 cis4
+      d2.
+      d4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIc
+    << {
+      r2 d'8 g, a4\turn %9
+      g8 b16 a g a b c d c b c d8 d,
+      d4
+    } \\ {
+      g8 d es4\turn d8 es16 d c8 d16 c
+      s2 fis8 g4 fis8\turn
+      g4
+    } >> r r2\fermata \bar "||"
+
+    \time 3/4 \tempoIId
+    r8 d es d c d %12
+    b8. c16 d4. c8
+    r d' es d c d
+    << {
+      b8. c16 d4 c~
+      c8 b a b a4
+      g
+    } \\ {
+      r8 g b a g a
+      fis[ g] fis g4 fis8\turn
+      g4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoIIe
+    << {
+      R1 %18
+      d'8 es16 d c4~ c8 d16 c b8 c16 b
+      a2 g4
+    } \\ {
+      r4 d8 es16 d c4. d16 c
+      r4 g'8 a16 g fis4 g
+      es d d
+    } \\ {
+      s1
+      s
+      g4. fis8\turn s4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoIIf
+    r8 d' a( b) fis( g)
+    r g' d( es) h( c)
+    r es \appoggiatura f16 es8 d16 c \appoggiatura d c8 b16 a
+    d, g b g d'4 fis,\trill
+    <g d b>2 r4\fermata \bar "|."
+  }
+}
+
+% Chords = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% Chords = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% Chords = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% Chords = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% Chords = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
 % Chords = {
 %   \relative c' {
 %     \clef treble
