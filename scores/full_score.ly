@@ -53,15 +53,31 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \section "4" "ti Toni"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new PianoStaff <<
+  %         \set PianoStaff.instrumentName = "org"
+  %         \new Staff { \IVChords }
+  %         \new Staff { \IVOrgano }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
-    \section "4" "ti Toni"
+    \section "5" "ti Toni"
     \addTocEntry
+    \paper { systems-per-page = #4 }
     \score {
       <<
         \new PianoStaff <<
           \set PianoStaff.instrumentName = "org"
-          \new Staff { \IVChords }
-          \new Staff { \IVOrgano }
+          \new Staff { \VChords }
+          \new Staff { \VOrgano }
         >>
       >>
       \layout { }

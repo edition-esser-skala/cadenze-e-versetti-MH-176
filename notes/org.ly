@@ -347,12 +347,100 @@ IVOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+VOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoVa
+    << {
+      <e g>2.
+      <d f a>2 <e g>4
+      q f2
+      <d g> <e g>4
+    } \\ {
+      c2.
+      c2 c4
+      cis d2
+      h c4
+    } >>
+    <f, a d f> << {
+      e' f
+      f( e)
+    } \\ {
+      g,2 \noBreak
+      c
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoVb
+    R1 \noBreak %7
+    r2 r8 g' c4
+    << {
+      s4 c4. h8 c4~
+      c8 a h c d4 c
+    } \\ {
+      h16 a g f e8 a d, g c, e \noBreak
+      f4 g2 c,4\fermata
+    } >> \bar "||"
+
+    \time 3/4 \tempoVc
+    R2. \noBreak %11
+    R
+    g'8 c4 h8 g f'
+    c, g'4 fis8 d c'
+    <h d> <a c> << { d8. c16 <h d>4 } \\ { g2 } >>
+    << {
+      c8 f4 e8 d4 \noBreak
+      c
+    } \\ {
+      g2.
+      c,4
+    } >>
+    r r\fermata \bar "||"
+
+    \time 4/4 \tempoVd
+    R1 \noBreak %18
+    r2 c4 f
+    d g e8 e e c
+    f f f d
+    << {
+      s4 d'
+      e8 c4 h8 c4
+    } \\ {
+      g2~ \noBreak
+      g c,4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVe
+    << {
+      R2. \noBreak %23
+      c'4 h a
+      g8 s s2
+      s8 fis g h c d
+      h4 g8 g' f f,
+      e4 s2
+      e'8 c d e16 f g4
+    } \\ {
+      g,4 e d
+      c8 a'4 g fis8
+      g h, c e f g
+      e r r4 r
+      g e d
+      c r8 c'4 b8~
+      b a g2 \noBreak
+    } >>
+    c,4 r r\fermata \bar "||"
+
+    \time 4/4 \tempoVf
+    <c e g>2 <h d g> \noBreak %31
+    <b e g> <a c f>
+    << {
+      <d f>4 e16 d e c s4 f
+      <c e g>2
+    } \\ {
+      g2~ <g d'>^\trill
+      c,
+    } >> r\fermata \bar "|." %34 finis
+  }
+}
 
 % Organo = {
 %   \relative c {

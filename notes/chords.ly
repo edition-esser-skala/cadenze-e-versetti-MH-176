@@ -399,12 +399,99 @@ IVChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+VChords = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoVa
+    g'4 c e
+    d16( f e d) c( h d h) c( g' e c)
+    b4~ b16_[ gis \appoggiatura h32 a16 gis] a( cis) \tuplet 3/2 8 { d[ a f'] }
+    f8~ f32 e f g f[ e d c] h a g f e16( c' g e)
+    d( a' f d) << {
+      c4 \once \override Script.X-offset = #4 d8.\turn e16
+      <h d>4( c)
+    } \\ {
+      g4~ <g h>
+      g2
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoVb
+    << {
+      r2 g'4 c %7
+      h16 a g f e8 a d, g4 fis8
+      g4 c f e16 d c h
+      a8 d g, c4 h8 c4\fermata \bar "||"
+    } \\ {
+      c,4 f e16 d c h a8 d
+      g, h c4. h8 e d
+      d h g' e a g g4~
+      g8 f4 e16 f g4 <e g>
+    } >> \bar "||"
+
+    \time 3/4 \tempoVc
+    << {
+      g8 c4 h8 g f' %11
+      e4 d8. e16 fis4\trill
+      g16 f e8 d8. c16 h4
+      <g c>8 h a8. g16 fis4
+      g8 c4 h8 g f'!
+      e d16 c h8 c4 h8\turn
+      <g c>4
+    } \\ {
+      R2.
+      c,8 g'4 fis8 d c'
+      h c16 g f fis g4.
+      e8 d c16 cis d4.
+      g8 fis g4 s
+      r8 a g2
+      e4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVd
+    << {
+      r2 c4 f %18
+      d g e8 e e c
+      f f f d g4 c
+      a <a d> h8 h h g
+      c e d4\trill c
+    } \\ {
+      g,4 c a d
+      h8 h h g c g a4~
+      a8 a h4 c2
+      c4 f <f g>~ f
+      g2 <e g>4
+    } \\ {
+      s1
+      s
+      s2. g4
+      g8[ f]
+    } >> r4\fermata \bar "||"
+
+    \time 3/4 \tempoVe
+    R2. %23
+    R
+    << {
+      g4 e d
+      c' h a
+      g8 d'4 c h8
+      <c g'>4 e d
+      c8 f4 e8 d4
+    } \\ {
+      s8 d,4 c h8
+      c a'4 g f!8~
+      f d s2
+      s4 r8 <a' c> <f a> <g b>
+      g[ a] h c4 h8
+    } >>
+    <c g e>4 r r\fermata \bar "||"
+
+    \time 4/4 \tempoVf
+    e8( c) \afterGrace g4 { a16[ g fis g a h c d e] } f8( d) \afterGrace g,4 { a16[ g fis g a h c d e f] } %31
+    g8( e) \afterGrace c4 { d16[ c h c d e f g a b] } c a f c a f c a
+    h! g' d h c h c a h2\trill
+    c r\fermata \bar "|." %34 finis
+  }
+}
 
 % Chords = {
 %   \relative c' {
