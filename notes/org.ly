@@ -5,17 +5,18 @@ IOrgano = {
     \clef bass
     \key d \minor \time 3/4 \tempoIa
     d4 e f
-    cis2 c4 \mark \critnote
+    cis2 c4
+    h2 b4
     << { s2 a'4 } \\ { a,2. } >> \noBreak
     d,2 r4\fermata \bar "||"
 
     \time 4/4 \tempoIb
-    R1 \noBreak %5
+    R1 \noBreak %6
     << { d'8 d f g } \\ { r2 } >> a,8 a h cis \noBreak
     d g, <a e'>4 <d, d'> r\fermata \bar "||"
 
     \time 3/4 \tempoIc
-    R2. \noBreak %8
+    R2. \noBreak %9
     a''4 b a8 g
     << {
       a4 d g
@@ -28,25 +29,25 @@ IOrgano = {
     } >> r r\fermata \bar "||"
 
     \tempoIcc
-    R2. \noBreak %13
-    a'4 b a8 g
+    R2. \noBreak %14
+    a'4 b a8 g %15
     << {
-      a4 d g %15
+      a4 d g
       e cis2
       d4 f e8 d
     } \\ {
-      f,2 g4 %15
+      f,2 g4
       a2.~
       a4 r r
     } >>
     a b a8 g
-    fis4 g e8 d
-    cis4 d b8 a %20
+    fis4 g e8 d %20
+    cis4 d b8 a
     g4 a2 \noBreak
     <d d,>4 r r\fermata \bar "||"
 
     \time 4/4 \tempoId
-    r2 << { %23
+    r2 << { %24
       s4 cis' \noBreak
       d r a8 g16 f e8 g
       f g f e d4
@@ -57,7 +58,7 @@ IOrgano = {
     } >> r\fermata \bar "||"
 
     \tempoIdd
-    R1 \noBreak %26
+    R1 \noBreak %27
     r2 a''8 g16 f e8 g
     << {
       d'8 c16 b a8 c h16 e d c h8 d
@@ -70,7 +71,7 @@ IOrgano = {
     } >> r\fermata \bar "||"
 
     \time 3/4 \tempoIe
-    R2. \noBreak %31
+    R2. \noBreak %32
     R
     d'4 d b'
     << {
@@ -87,12 +88,12 @@ IOrgano = {
 
     \time 4/4 \tempoIf
     << {
-      <f a>4 <d a'> <d g> <d f> %38
+      <f a>4 <d a'> <d g> <d f> %39
       q <e g> d
     } \\ {
       d4 c h b
       a2 d,4
-    } >> r\fermata \bar "|." %39 finis
+    } >> r\fermata \bar "|." %40 finis
   }
 }
 

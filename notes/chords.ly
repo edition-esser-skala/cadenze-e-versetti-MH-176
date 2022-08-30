@@ -5,13 +5,19 @@ IChords = {
     \clef treble
     \key d \minor \time 3/4 \tempoIa
     <f a d>4 <e g cis> <d a' d>
-    << { b' a2 } \\ { <e g>2 <es fis>4 } >>
-    <d f a> << { d4 \grace f8 <cis e>4 } \\ { a2 } >>
+    << {
+      b' a2
+      a4 gis2
+    } \\ {
+      <e g>2 <es fis>4
+      <d f>2.
+    } >>
+    <d f a>4 << { d4 \grace f8 <cis e>4 } \\ { a2 } >>
     <a d>2 r4\fermata \bar "||"
 
     \time 4/4 \tempoIb
     << {
-      d8 d f g a4 g
+      d8 d f g a4 g %6
       f2 e4. e8~
       e d4 cis8\turn d4
     } \\ {
@@ -22,7 +28,7 @@ IChords = {
 
     \time 3/4 \tempoIc
     << {
-      R2. %8
+      R2. %9
       R
       d'4 f e8 d
       d2 cis4\turn
@@ -37,25 +43,25 @@ IChords = {
 
     \tempoIcc
     << {
-      R2. %13
-      R
-      d4 f e8 d %15
+      R2. %14
+      R %15
+      d4 f e8 d
       cis4 e2~
       e8 cis d2~
       d8 cis cis2
-      d8 c <b g>2
-      a8 g <f d>2 %20
+      d8 c <b g>2 %20
+      a8 g <f d>2
       e2.
       d4
     } \\ {
-      d4 f e8 d %13
-      cis2 e4
-      s2. %15
+      d4 f e8 d %14
+      cis2 e4 %15
+      s2.
       a4 b a8 g
       f4 a2
       <e a>4 <e g>2
-      <d a'>4 d e
-      <a, e'> a b %20
+      <d a'>4 d e %20
+      <a, e'> a b
       b a2
       a4
     } \\ {
@@ -66,7 +72,7 @@ IChords = {
 
     \time 4/4 \tempoId
     << {
-      R1 %23
+      R1 %24
       a''8 g16 f e8 g f4 cis
       d8 b a cis,\turn d4
     } \\ {
@@ -76,7 +82,7 @@ IChords = {
     } >> r\fermata \bar "||"
 
     \tempoIdd
-    << { r2 d'8 c16 b a8 c } \\ { a g16 f e8 g f4 fis } >> %26
+    << { r2 d'8 c16 b a8 c } \\ { a g16 f e8 g f4 fis } >> %27
     <g b>8 <f a> <e g> <d f> <cis e>2
     a' g4 h
     << {
@@ -88,7 +94,7 @@ IChords = {
     } >> r\fermata \bar "||"
 
     \tempoIe
-    d4 d b' %31
+    d4 d b' %32
     << {
       a2 g4
       f2 g4
@@ -108,8 +114,8 @@ IChords = {
     } >> r r\fermata \bar "||"
 
     \tempoIf
-    r8 d fis,8.(\trill e32 fis) g8-! d' gis,4\trill %38
-    a8-! a cis,4\trill <d a f> r\fermata \bar "|." %39 finis
+    r8 d fis,8.(\trill e32 fis) g8-! d' gis,4\trill %39
+    a8-! a cis,4\trill <d a f> r\fermata \bar "|." %40 finis
   }
 }
 
