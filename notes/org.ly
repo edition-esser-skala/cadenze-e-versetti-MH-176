@@ -442,12 +442,107 @@ VOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+VIOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoVIa
+    << {
+      c'4 d d4. <g, d>8
+      <g b>4. s8
+    } \\ {
+      <f a>2 g4. b,8
+      c2
+    } >> d8~ d32 a' g a f[ g e f] d e c d
+    << {
+      f'4\rest g, <g b>4. <f a>8 \noBreak
+      g4 b a
+    } \\ {
+      b,2 c~
+      c f,4
+    } \\ {
+      s4. b'8 s2
+      g2 f4
+    } \\ {
+      \voiceThree r8 d4. s2
+    } >> r4\fermata \bar "||"
+
+    \time 3/4 \tempoVIb
+    R2. \noBreak %5
+    R
+    r8 c' b a g b
+    << {
+      a8. d16 g,8. c16 f, g a h
+      c4 s2
+      b!16 a g f e8 f c'4
+      f,
+    } \\ {
+      r8 f f e d f
+      e4 r8. a16 d,8. g16
+      c,2. \noBreak
+      f,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIc
+    R1 \noBreak %12
+    r2 r8 b' a16 b g a
+    << {
+      d8. d16 c8. c16 b8. b16 h8. h16
+      c4. b8 f4
+    } \\ {
+      fis8 g e f d2 \noBreak
+      c f,4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVId
+    << {
+      c''4 f,8 a g4\trill \noBreak %16
+      f16 g a h c g c4 b8~
+      b a16 g a8 a b c
+      a4 g r
+      c f,8 a g4\trill
+      f
+    } \\ {
+      R2.
+      R
+      R
+      f4 c8 e d4\trill
+      c2. \noBreak
+      f,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIe
+    \partial 4 f' \noBreak g8 a b c16 b a8 g f e \noBreak %22
+    d c4 h8 c b' a g16 a
+    b8 a g4 f f'8 e
+    d c4 h8 c4 f,
+    g8 a b c16 b a8 b16 a g8 a16 g
+    f8 g16 f e8 f
+    << {
+      s8 c'4 h8
+      b a g4 f
+    } \\ {
+      c2~ \noBreak
+      c4 c f,
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIf
+    << {
+      a'4 b c \noBreak %30
+      d e! s
+      s2 a,4
+      b2.
+      a4 <b e,>2
+      f4
+    } \\ {
+      f2.
+      f
+      c2 d4
+      b2.
+      c \noBreak
+      f,4
+    } >> r r\fermata \bar "|." %35 finis
+  }
+}
 
 % Organo = {
 %   \relative c {

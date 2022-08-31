@@ -493,12 +493,115 @@ VChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+VIChords = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoVIa
+    r16 a''~ a32[ b g a] f[ g e f] d f a, d \once \override Script.X-offset = #2 \scriptOut c8(\turn b32) d c d b[ c a b] g d' d, g
+    \once \override Script.X-offset = #4 \scriptOut f8(\turn e32) g' f g e[ f d e] << {
+      c b a b \once \override Script.X-offset = #4 \scriptOut b8(\turn a4) a8~
+      a32 d c d b[ c a b] g b a b g[ a f g] e g f g e[ f d e] c8 f~
+      f32 e f g f[ e f d] e4\trill f
+    } \\ {
+      <e g>8 <d f>2
+      s2. c4~
+      c2 c4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIb
+    << {
+      r8 c' b a g b %5
+      a8. d16 g,8. c16 f, g a h
+      c4 g8 a b g
+    } \\ {
+      R2.
+      r8 f f e d f
+      e8. g16 c,8. f16 b, c d e
+    } >>
+    f8 a h c a d,
+    g <e g> << {
+      f e f d
+      r c' b a g b
+      <f a>4
+    } \\ {
+      d8 c4 h8
+      e8. f16 g8 f4 e8
+      c4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIc
+    << {
+      r2 r8 b' a16 b g a %12
+      r8 f' e16 f d e c2~
+      c16 d b8. c16[ a8.] b16[ g8.] a16 g8~
+      g16 a g a g4\trill
+    } \\ {
+      r8 f e16 f d e c4. b8
+      a a' g f e4 f8 <es g>
+      a g4 f f f8~
+      f f e4
+    } \\ {
+      s1
+      f8 c'4 h8 g4
+    } >> <f c a> r\fermata \bar "||"
+
+    \time 3/4 \tempoVId
+    R2. %16
+    f4 c8 e d4\trill
+    << {
+      c' f,8 a g4\trill
+      f16 g a h c g c4 b8~
+      b a16 g a g f g f8 e
+    } \\ {
+      c8 d16 e f c f4 e8
+      f4 e8 c f4
+      e c2
+    } >>
+    <a c f>4 r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIe
+    \partial 4 r4 %22
+    << {
+      R1
+      r2 r4 f'
+      g8 a b c16 b r4 c
+      d8 e f g16 f e8 d c <c f>
+      f4 e f8 d4 c8~
+      c b4 a8 g a16 g f8 g16 f
+    } \\ {
+      r2 r4 c
+      d8 e f g16 f e8 d c b16 c
+      d8 c d e <f a> <g b> a g
+      f e d4 c8 b'4 a8
+      g2 f8 g16 f e8 f16 e
+      d8 e16 d c4. s4
+    } \\ {
+      s1
+      s
+      s
+      s
+      b'2 a8 b4 a8~
+      a g4 \voiceTwo f8~ f[ e] d4
+    } >>
+    e8 f4 e8\trill f4 r\fermata \bar "||"
+
+    \time 3/4 \tempoVIf
+    << {
+      f4 <e g> <f a> %30
+      b <b d> <a c>
+      q( <g b>) <f a>
+      fis16 g b a fis g cis d a b fis g
+      c e, \once \override Script.X-offset = #2 f16.\turn g32 \once \slurDown \appoggiatura { f16[ g a] } g2\trill
+    } \\ {
+      c,2 es4
+      f g f
+      e2 s4
+      d2.
+      c4 s2
+    } >>
+    <a, c f>4 r r\fermata \bar "|." %35 finis
+  }
+}
 
 % Chords = {
 %   \relative c' {
