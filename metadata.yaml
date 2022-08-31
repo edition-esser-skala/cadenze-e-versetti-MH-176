@@ -5,7 +5,7 @@ title: Cadenze e Versetti
 id: MH 176
 genre: verset
 scoring: org
-license: cc-by-sa-4.0
+license: cc-by-nc-sa-4.0
 sources:
   A1:
     siglum: D-Mbs
@@ -15,4 +15,4 @@ sources:
     url: https://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb00085103-0
     license: cc-by-nc-sa-4.0
     principal: true
-imslp:
+imslp: Cadenze_e_Versetti,_MH_176_(Haydn,_Michael)
