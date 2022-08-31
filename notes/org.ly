@@ -643,15 +643,121 @@ VIIOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+VIIIOrgano = {
+  \relative c {
+    \clef bass
+    \key g \major \time 4/4 \tempoVIIa
+    << {
+      <h' d>4. q8 e4. c8
+      fis2 g8 d16. c32 h8 a
+      g4. a8 fis4 g8 a16. h32
+      c4~ \bp #6 #5 c16. h32 c16. a32 h4. b8 \noBreak
+      a2 g\fermata \bar "||"
+    } \\ {
+      g1
+      g2~ g4. fis8
+      e4. c8 d2~
+      d~ d4. cis8
+      d2 g,\fermata
+    } \\ {
+      s1
+      s
+      s
+      s
+      a'4 c
+    } >>
 
-% << {
-%
-% } \\ {
-%
-% } >>
+    \time 3/4 \tempoVIIIb
+    R2. \noBreak %6
+    R
+    g8 a h c16 d e8 c
+    << {
+      d4 c~ c16 h c d
+      h4 g2
+      g8 fis g4. a8~
+      a h c h a4\trill
+      g
+    } \\ {
+      d8 d e fis16 g a8 fis
+      g4 e c
+      g8 a h c16 d e8 c
+      d2. \noBreak
+      g,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIIc
+    R1 \noBreak %14
+    r8 d'' e c a4 d
+    << {
+      h d2 cis4
+      d4 r8 e c16 d h c a c h a
+      g4 r r8 c e c
+      a h16 c d4 g,
+    } \\ {
+      r8 g h g e4 a
+      fis g2 fis4
+      g r8 h, c2 \noBreak
+      d g,4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIIId
+    d''8. c16 h8 d c fis, \noBreak %20
+    g h a4. g8
+    fis a g h a c
+    << {
+      h4 r r
+      d8. c!16 h8 d c fis,
+      g4 a h~
+      h8 h a8.\trill g16 a4 \noBreak
+      g
+    } \\ {
+      g8. g16 fis8 a g cis,
+      d2.~
+      d4 d4. cis8
+      d2. \noBreak
+      g,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIIe
+    g'4. f8 e8.\trill d16 e8 fis \noBreak %28
+    << {
+      d'4. c8 h8.\trill a16 h8 c
+      d f h, d g,4 c
+      h8 d a fis g4 e'8 d16 c
+      h4 d g, r
+    } \\ {
+      g8 h fis a g4 e8 d16 c
+      h4 g8 h c4 a'
+      g r r2
+      r8 g4 f8 e8.\trill d16 e8 fis
+    } >>
+    g4 h,8 c d4 a8 h
+    c4 g8 a h e << {
+      d8 c'
+      h4 h8 d c h c a
+      h d f d c2
+      <h d>1
+    } \\ {
+      d,4
+      g1~
+      g~ \noBreak
+      g\fermata
+    } >> \bar "||"
+
+    \time 3/4 \tempoVIIIf
+    g8 fis e dis e c \noBreak %38
+    d c' a fis d fis
+    g f' d h g h
+    c c, g' gis a g
+    fis g e d cis c
+    h!4 << {
+      g'8( gis) a c
+      h16 a h g a8.\trill g16 a4\trill
+      g2
+    } \\ {
+      c,4 r8 c
+      d2. \noBreak
+      g,2
+    } >> r4\fermata \bar "|." %45 finis
+  }
+}

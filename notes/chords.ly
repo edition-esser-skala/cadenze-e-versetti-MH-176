@@ -741,9 +741,123 @@ VIIChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+VIIIChords = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \tempoVIIa
+    << {
+      r8 g' d'4. h8 c e~
+      e d a' c, \once \override Script.X-offset = #2 h8.\turn c16 h4~
+      h8 h c4. d8 h4~
+      h8 e a,4. d8 g,4~
+      g16. fis32 g16. e32 fis4\trill g2\fermata
+    } \\ {
+      s2 g4. g8
+      a2 g4. d8
+      g4. e8 a4. g16. fis32
+      e4~ \bp #-5 #-6 e16. d32 e16. c32 d4. e8
+      d2 <h d>
+    } >> \bar "||"
+
+    \time 3/4 \tempoVIIIb
+    << {
+      g'8 a h c16 d e8 c %6
+      d4 c~ c16 h c d
+      h8 c d c h e
+      a,4 r r
+      g8 a h c16 d e8 c
+      d2 c4~
+      c8[ h] fis g4 fis8\trill
+      g4
+    } \\ {
+      R2.
+      d8 d e fis16 g a8 fis
+      g4 g~ g16 fis g a
+      fis8 fis g fis e a
+      d,4 r g8 a
+      h c h a g e
+      fis g d2
+      <h d>4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIIc
+    r8 g' h g e4 a %14
+    fis g2 fis4
+    g r8 h g16 a fis g e g fis e
+    r8 d' e c a4 d
+    << {
+      h d4. g,8 c4~
+      c8 h a4
+    } \\ {
+      r8 g h g e4 a
+      fis8 g4 fis8
+    } >> <d g h>4 r\fermata \bar "||"
+
+    \time 3/4 \tempoVIIId
+    R2. %20
+    g8. g16 fis8 a g cis,
+    << {
+      d'8. c!16 h8 d c fis,
+      g h a d cis e
+      a,4 r d8. c16
+      h8 d c fis, g4~
+      g8 g fis8.\trill e16 fis4
+      <d g>
+    } \\ {
+      d8 fis g4 d~
+      d d8 fis e g
+      fis fis g h a4
+      d,2~ d8 e
+      d2 d8 c
+      h4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIIe
+    R1
+    R
+    g'4. f8 e8.\trill d16 e8 fis
+    << {
+      d'4. c8 h8.\trill a16 h8 c
+      d f h, d <c g> <c e>4 <h d>16 <a c>
+      <g h>8 <a c> <h d>4 a8 <g h> <a c>4
+      g8 <fis a> <g h>4. c8 h[ <fis a>]
+      g8 r r4 r2
+      g'4. f8 e8.\trill d16 e8 fis
+      g1\fermata
+    } \\ {
+      g,8 h fis a d,4 g
+      g2 s
+      s4 d8 e f e16 d c8 d
+      e d16 c h8 c d c d4
+      d8 g4 f8 e8.\trill d16 e8 fis
+      g h d h g4. a8
+      g1
+    } \\ {
+      s1
+      s
+      s
+      s2 s8 g4 s8
+    } >>
+
+    \time 3/4 \tempoVIIIf
+    << {
+      h4 h4. c8 %38
+      <g h>( <fis a>) <d c'>4. <d d'>8
+      <a' c>( <g h>) <g f'>4. <g g'>8
+      <d' f>( <c e>4) d <a c>8~
+      q <g h> <g b>4. <fis a>8
+      <d d'> <dis dis'> <e e'>4 d'16( c) h( a)
+      g fis g e fis8.\trill e16 fis4
+      <d g>2
+    } \\ {
+      <d g>8 <dis a'> <e g> <fis a> <e g> <e a>
+      d4 fis8 a fis a
+      d, r h'8 d h d
+      g,4 g8 <f h> <e a> es
+      d4 cis8 d e es
+      g4 s r8 e
+      d2 c4
+      h2
+    } >> r4\fermata \bar "|."
+  }
+}

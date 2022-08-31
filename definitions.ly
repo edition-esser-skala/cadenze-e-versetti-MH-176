@@ -50,6 +50,12 @@ tempoVIIa = \tempoMarkup "Cadenza"
   tempoVIId = \tempoMarkup "Versetto 3"
   tempoVIIe = \tempoMarkup "Versetto 4"
   tempoVIIf = \tempoMarkup "Cadenza"
+tempoVIIIa = \tempoMarkup "Cadenza"
+  tempoVIIIb = \tempoMarkup "Versetto 1"
+  tempoVIIIc = \tempoMarkup "Versetto 2"
+  tempoVIIId = \tempoMarkup "Versetto 3"
+  tempoVIIIe = \tempoMarkup "Versetto 4"
+  tempoVIIIf = \tempoMarkup "Cadenza"
 
 
 \include "notes/chords.ly"
