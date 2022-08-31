@@ -603,12 +603,143 @@ VIChords = {
   }
 }
 
-% Chords = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+VIIChords = {
+  \relative c' {
+    \clef treble
+    \key d \major \time 3/4 \tempoVIIa
+    <fis d'>4 <d fis>2
+    <fis d'>4 <d fis>2
+    <d e h'>4 <h d e>2
+    << { <cis e>8[ <d fis>] } \\ { a4 } >> <e' g>2
+    q8 <d fis> <fis d'>2
+    << {
+      cis'8 d <cis e> <d fis> <e g> g,
+      fis e d4 cis\trill
+      d2
+    } \\ {
+      e8 fis g gis a e
+      d h a2
+      a
+    } \\ {
+      a'4 s2
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoVIIb
+    << {
+      d8 fis h,16 cis d e cis8 d4 cis8 %9
+      d cis d h a fis g e
+      d' fis h,16 cis d e a, h cis d cis d e fis
+      g8 fis e4 d
+    } \\ {
+      r2 a8 h e,16 fis g a
+      fis8 a4 gis8 cis, d4 cis8
+      a'4 e a a16 h cis d
+      e8 a,4 a16 g fis4
+    } \\ {
+      s1
+      s
+      s
+      s4. a8 a4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIIc
+    << {
+      d,8 a' fis h a g %13
+      fis8.\trill g16 a8. a16 a g a fis
+      e fis e fis g4~ g16 h a g
+      fis8 e a g g16 fis fis e
+      a8 d cis fis e d
+      cis <e g> <d fis> <cis e> d <d a'>
+      <e g> <d fis> <cis e> d4 cis8
+      d4
+    } \\ {
+      R2.
+      a,8 d cis fis e d
+      cis8. d16 e8 cis a cis
+      d cis d4. cis8
+      d fis a2
+      a a4~
+      a a a8 g
+      fis4
+    } \\ {
+      s2.
+      s
+      s
+      s
+      s
+      s
+      s2 a4
+      a
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIId
+    \partial 8 r8 %21
+    << {
+      R1
+      R
+      r4 r8 d h4 e
+      cis8.\trill h16 a8 cis d a d4~
+      d cis2 h4~
+      h8 a4 g8 g4. <d fis>8~
+      q \appoggiatura a'16 <e g>8 <d fis> <cis e> d4
+    } \\ {
+      r2 r4 r8 a'
+      fis4 h g8.\trill fis16 e8 a
+      fis8.\trill e16 d8 fis e4. h'8
+      a e16 d cis8 e d4. d8
+      e2 d
+      cis4 h a4. a8
+      h4 a a
+    } \\ {
+      s1
+      s
+      s
+      s4. a'8 a fis4 fis8
+      h4 g8 e a4 \bp #0 #-0.5 fis8 d
+      g fis4 e8 e4 cis8
+    } >> r4\fermata \bar "||"
+
+    \time 3/4 \tempoVIIe
+    R2. %29
+    R
+    R
+    R
+    R
+    << {
+      d4 fis g
+      gis( a8) fis g e
+      a4 h cis
+      cis( d8) cis d h
+    } \\ {
+      s4 r8 cis, d4
+      d4. d4 cis8
+      fis e d e16 fis g8 e
+      a gis a a4 gis8
+    } >>
+    <a cis> <h d> <a cis> <g h> <fis a> <e g>
+    <d fis> <fis a> << {
+      d' d4 dis8
+      e f f4 e~
+      e8[ d] cis d4 cis8
+      d4
+    } \\ {
+      r8 <a c> <g h>4
+      <h d> a8 a4.
+      a2 a8 g
+      fis4
+    } \\ {
+      s2
+      s4 d'4 cis8 h
+      s2 a4
+      a
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIf
+    d,32[ a' g fis] e d cis d g[ d' cis h] a g fis g a[ fis' e d] cis d e d \appoggiatura cis32 h16[ a32 g] fis e g e %43
+    gis,[ a h cis] d e fis g gis a h a a8~ a32[ e a g] fis e d cis h[ a gis a] gis a h cis
+    << { cis4( d) } \\ { a2 } >> r\fermata \bar "|." %45 finis
+  }
+}
 
 % Chords = {
 %   \relative c' {

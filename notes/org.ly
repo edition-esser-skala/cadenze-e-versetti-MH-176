@@ -544,12 +544,104 @@ VIOrgano = {
   }
 }
 
-% Organo = {
-%   \relative c {
-%     \clef bass
-%
-%   }
-% }
+VIIOrgano = {
+  \relative c {
+    \clef bass
+    \key d \major \time 3/4 \tempoVIIa
+    << {
+      a'2. \noBreak
+      h
+    } \\ {
+      d,4. fis8 d cis
+      h4. d8 h a
+    } >>
+    g4. fis8 g gis
+    << {
+      s4 r8 cis a' cis,
+      d4 r8 d h' gis
+      g fis e d cis4
+      d8 g fis4 <e g>
+      <d fis>2
+    } \\ {
+      a2.
+      a
+      a
+      h8 g a2 \noBreak
+      d,
+    } >> r4\fermata \bar "||"
+
+    \time 4/4 \tempoVIIb
+    R1 \noBreak %8
+    d''8 fis h,16 cis d e a,8 h e,16 fis g a
+    << {
+      d2 cis16 d e fis g fis e d
+      cis8 d4 cis8 d4
+    } \\ {
+      fis,4 gis a2 \noBreak
+      a d,4
+    } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIIc
+    R2. \noBreak %13
+    R
+    R
+    d8 a' fis h a g
+    fis d << {
+      e' d cis fis
+      e cis d g fis fis
+      cis d g fis e4
+      d
+    } \\ {
+      a2~
+      a4 a2
+      a a4 \noBreak
+      d,
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIId
+    \partial 8 d'8 \noBreak h4 e cis8.\trill h16 a8 cis \noBreak %21
+    d8.\trill cis16 h8 d e d cis h16 cis
+    d8 cis h a g8.\trill fis16 g8 gis
+    a4. a8 fis4 h
+    g8.\trill fis16 e8 a fis8.\trill e16 d8 g
+    e fis d e cis8.\trill h16 a8 d \noBreak
+    g,4 << { a8 g' <d fis>4 } \\ { a4 d, } >> r\fermata \bar "||"
+
+    \time 3/4 \tempoVIIe
+    d'4 fis g \noBreak %29
+    gis( a8) fis g e
+    << {
+      a4 h cis
+      cis( d8) cis d h
+      cis4 h a8 g
+      fis4
+    } \\ {
+      fis8 cis d dis e eis
+      fis g fis e d e
+      a, a'4 g8 fis e
+      d cis h ais h h'
+    } >>
+    fis eis fis h e, a
+    d, e16 fis g8 fis e a
+    fis eis fis fis' h, e
+    a,4 r r
+    d, fis g
+    << {
+      s2 s8 g'
+      fis!4 e8 fis e4
+      d
+    } \\ {
+      gis,4 a2
+      a2. \noBreak
+      d,4
+    } >> r r\fermata \bar "||"
+
+    \time 4/4 \tempoVIIf
+    <d fis a>4 <h d g> <fis a d> <g h d> \noBreak %43
+    <a d fis>2 \bar "" <a cis e g> \noBreak
+    << { <e' g>4( fis) } \\ { <d d,>2 } >> r\fermata \bar "|." %45 finis
+  }
+}
 
 % Organo = {
 %   \relative c {
